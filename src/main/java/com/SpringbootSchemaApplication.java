@@ -10,10 +10,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @MapperScan(basePackages = {"com.dao"})
 public class SpringbootSchemaApplication extends SpringBootServletInitializer{
 
+ 	static String LinuxCmd = "xdg-open";
+	static String WindowsCmd = "cmd /c start";
+	static String IndexUrl = "http://localhost:8080/springboott7atu/front/index.html";
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootSchemaApplication.class, args);
+		String OsCmd = LinuxCmd;
 		try {
-			Runtime.getRuntime().exec("cmd /c start http://localhost:8080/springboott7atu/front/index.html");
+			Runtime.getRuntime().exec(String.join(" ", OsCmd, IndexUrl));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
