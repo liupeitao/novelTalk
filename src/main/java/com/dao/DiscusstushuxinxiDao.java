@@ -1,15 +1,14 @@
 package com.dao;
 
-import com.entity.DiscusstushuxinxiEntity;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import java.util.List;
-import java.util.Map;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
-
-import org.apache.ibatis.annotations.Param;
-import com.entity.vo.DiscusstushuxinxiVO;
+import com.entity.DiscusstushuxinxiEntity;
 import com.entity.view.DiscusstushuxinxiView;
+import com.entity.vo.DiscusstushuxinxiVO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 
 /**
@@ -30,6 +29,5 @@ public interface DiscusstushuxinxiDao extends BaseMapper<DiscusstushuxinxiEntity
 	List<DiscusstushuxinxiView> selectListView(Pagination page,@Param("ew") Wrapper<DiscusstushuxinxiEntity> wrapper);
 	
 	DiscusstushuxinxiView selectView(@Param("ew") Wrapper<DiscusstushuxinxiEntity> wrapper);
-	
 
 }
