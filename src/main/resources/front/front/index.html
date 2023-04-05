@@ -23,7 +23,7 @@
 
     #header {
         height: auto;
-        background: #fff;
+        background: #CD0100;
         border-bottom: 0;
         position: fixed;
         top: 0;
@@ -39,8 +39,7 @@
         font-size: 16px;
         color: #2a8a15;
         box-sizing: border-box;
-        height: 67px;
-        background: #4E757A;
+        height: 250px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
         justify-content: center;
         position: relative;
@@ -60,8 +59,8 @@
     }
 
     #header .nav-top-title {
-        line-height: 67px;
-        font-size: 30px;
+        line-height: 100px;
+        font-size: 75px;
         color: rgba(255, 255, 255, 1);
         padding: 0 10px;
         margin: 0 10px;
@@ -92,7 +91,8 @@
         align-items: center;
         box-sizing: border-box;
         height: 65px;
-        background: rgba(48, 87, 92, 0.5);
+        /*background: rgba(48, 87, 92, 0.5);*/
+        background:  rgb(187 29 67 / 50%);
         box-shadow: 0px 0px 0px 0px rgba(78, 117, 122, 1) inset;
         justify-content: center;
     }
@@ -111,7 +111,7 @@
     }
 
     #header .navs.navs1::-webkit-scrollbar {
-        display: none;
+        display: contents;
     }
 
     #header .navs1 .list {
@@ -217,7 +217,7 @@
 </div>
 <!-- end 顶部导航栏 -->
 
-<iframe src="./pages/home/home.html" id="iframe" frameborder="0" scrolling="no" width="100%"
+<iframe src="./pages/home/home.html" id="iframe" frameborder="0" scrolling="yes" width="100%"
         onload="changeFrameHeight"></iframe>
 
 <div id="tabbar" v-if="true" class="tabbar"
