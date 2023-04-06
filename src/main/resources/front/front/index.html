@@ -225,18 +225,18 @@
         onload="changeFrameHeight"></iframe>
 
 <div id="tabbar" v-if="true" class="tabbar"
-     :style='{"padding":"20px 0","boxShadow":"0 0 6px rgba(255,0,0,.8)","margin":"10px 0 0 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#000","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}'
+     :style='{"padding":"20px 0","margin":"10px 0 0 0","backgroundColor":"white","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}'
      style="position: relative;">
     <img v-if='true'
-         :style='{"boxShadow":"0 0 6px rgba(255,0,0,.8)","margin":"0 auto","borderColor":"rgba(0,0,0,.3)","borderRadius":"100%","borderWidth":"1px","width":"44px","borderStyle":"solid","height":"44px"}'
+         :style='{"margin":"0 auto","borderRadius":"100%","borderWidth":"1px","width":"44px","borderStyle":"solid","height":"44px"}'
          style='display: block;' src='http://codegen.caihongy.cn/20201024/ed5e326ca66f403aa3197b5fbb4ec733.jpg'/>
-    <div :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,.8)","margin":"10px auto","borderColor":"rgba(0,0,0,1)","backgroundColor":"#000","color":"#fff","textAlign":"center","borderRadius":"0","borderWidth":"0","width":"100%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
+    <div :style='{"padding":"0 10px","margin":"10px auto","backgroundColor":"white","color":"black","textAlign":"center","borderRadius":"0","borderWidth":"0","width":"100%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
          class="company">© 2014-2020 安徽新华信息科技有限公司
     </div>
-    <div :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"10px auto","borderColor":"rgba(0,0,0,1)","backgroundColor":"#000","color":"#fff","textAlign":"center","borderRadius":"0","borderWidth":"0","width":"100%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
+    <div :style='{"padding":"0 10px","margin":"10px auto","backgroundColor":"white","color":"black","textAlign":"center","borderRadius":"0","borderWidth":"0","width":"100%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
          class="record">aICP备13031638号
     </div>
-    <div :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"10px auto 30px auto","borderColor":"rgba(255,255,255,1)","backgroundColor":"#000","color":"#fff","textAlign":"center","borderRadius":"0","borderWidth":"1px 0","width":"40%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
+    <div :style='{"padding":"0 10px","margin":"10px auto 30px auto","backgroundColor":"white","color":"black","textAlign":"center","borderRadius":"0","borderWidth":"1px 0","width":"40%","lineHeight":"32px","fontSize":"14px","borderStyle":"solid"}'
          class="desc">电话：4008000000 | 邮箱：ptking.com
     </div>
 </div>
@@ -247,7 +247,15 @@
 <script src="./js/config.js"></script>
 
 <script>
-    var vue1 = new Vue({el: '#tabbar'})
+    var vue1 = new Vue({
+        el: '#tabbar',
+        data(){
+            return{
+
+            }
+        }
+    }
+    )
 
     var vue = new Vue({
         el: '#header',
