@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>首页</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
-    projectName
     <link rel="stylesheet" href="./xznstatic/css/common.css"/>
     <link rel="stylesheet" href="./xznstatic/css/style.css"/>
 </head>
@@ -14,16 +13,17 @@
     html, body {
         height: 100%;
     }
-
     #iframe {
         width: 100%;
-        margin-top: 67px;
-        padding-top: 65px;
+        /* 导航和内容的间距*/
+        margin-top: 2px;
+        padding-top: 0;
     }
 
     #header {
         height: auto;
-        background: #CD0100;
+        /*background: #CD0100;*/
+        background: linear-gradient(to right, rgb(237, 33, 58), rgb(147, 41, 30));
         border-bottom: 0;
         position: relative;
         top: 0;
@@ -187,7 +187,7 @@
         border-style: solid;
         border-color: rgba(255, 255, 255, 1);
         background-color: yellow;
-        box-shadow: 0 0 0px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 0 rgba(0, 0, 0, .3);
     }
 </style>
 <body>
@@ -195,13 +195,13 @@
 <div id="header">
     <div v-if='true' class="nav-top">
 <!--        <img alt="" v-if='false' class="nav-top-img" src='https://www.baidu.com/img/flexible/logo/pc/result@2.png'>-->
-        <div v-if="true" class="nav-top-title">在线图书讨论平台</div>
+        <div v-if="true" class="nav-top-title">学习党写的书<br>坚持党的领导</div>
         <img class="nav-top-xidada" src="img/xidadayulu.png" alt="" style="margin: 0 0 0 100px ">
 <!--        <div class="nav-top-tel"></div>-->
     </div>
     <div class="navs">
         <!-- <div class="logo" style="font-size: 20px;top: 32px;color: #fff;font-weight: bold;margin-left: -200px;width: 240px;" v-text="projectName"></div> -->
-        <div class="title" v-if="false" v-text="projectName"></div>
+        <div class="title" v-show="false" v-text="projectName"></div>
         <div class="list">
             <ul>
                 <li class='current'><a href="javascript:navPage('./pages/home/home.html')" class="menumain"><i
