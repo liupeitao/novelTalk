@@ -25,7 +25,7 @@
         height: auto;
         background: #CD0100;
         border-bottom: 0;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
@@ -46,6 +46,7 @@
         z-index: 1;
     }
 
+
     #header .nav-top-img {
         width: 124px;
         height: 40px;
@@ -59,8 +60,9 @@
     }
 
     #header .nav-top-title {
+        flex: 1;
         line-height: 100px;
-        font-size: 75px;
+        font-size: 50px;
         color: rgba(255, 255, 255, 1);
         padding: 0 10px;
         margin: 0 10px;
@@ -71,7 +73,9 @@
         background-color: rgba(0, 0, 0, 0);
         box-shadow: 0 0 0px rgba(0, 0, 0, .3);
     }
-
+    #header .nav-top-xidada{
+        flex: 1;
+    }
     #header .nav-top-tel {
         line-height: 40px;
         font-size: 16px;
@@ -102,7 +106,6 @@
         height: 100vh;
         background: darkgoldenrod;
         position: absolute;
-        top: 0;
         display: block;
         padding: 0;
         overflow-y: scroll;
@@ -111,7 +114,7 @@
     }
 
     #header .navs.navs1::-webkit-scrollbar {
-        display: contents;
+        display: block;
     }
 
     #header .navs1 .list {
@@ -166,24 +169,24 @@
     }
 
     #header .navs li.current {
-        color: rgba(255, 255, 255, 1);
+        color: red;
         font-size: 18px;
         border-radius: 0 0 50% 50%;
         border-width: 0 5px;
         border-style: solid;
-        border-color: rgba(255, 255, 255, 1);
-        background-color: rgba(103, 139, 143, 1);
+        border-color: deeppink;
+        background-color: yellow;
         box-shadow: 0px 0px 20px 15px rgba(78, 117, 122, 0.75);
     }
 
     #header .navs li:hover {
-        color: #fff;
+        color: red;
         font-size: 18px;
         border-radius: 0 0 50% 50%;
         border-width: 0 5px;
         border-style: solid;
         border-color: rgba(255, 255, 255, 1);
-        background-color: rgba(78, 117, 122, 0);
+        background-color: yellow;
         box-shadow: 0 0 0px rgba(0, 0, 0, .3);
     }
 </style>
@@ -191,9 +194,10 @@
 <!-- start 顶部导航栏 -->
 <div id="header">
     <div v-if='true' class="nav-top">
-        <img v-if='false' class="nav-top-img" src='https://www.baidu.com/img/flexible/logo/pc/result@2.png'>
+<!--        <img alt="" v-if='false' class="nav-top-img" src='https://www.baidu.com/img/flexible/logo/pc/result@2.png'>-->
         <div v-if="true" class="nav-top-title">在线图书讨论平台</div>
-        <div class="nav-top-tel"></div>
+        <img class="nav-top-xidada" src="img/xidadayulu.png" alt="" style="margin: 0 0 0 100px ">
+<!--        <div class="nav-top-tel"></div>-->
     </div>
     <div class="navs">
         <!-- <div class="logo" style="font-size: 20px;top: 32px;color: #fff;font-weight: bold;margin-left: -200px;width: 240px;" v-text="projectName"></div> -->
